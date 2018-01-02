@@ -38,4 +38,4 @@ MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATH = './plugins'
 PLUGINS = ['ipynb.markup']
-THEME = "./pelican-themes/simple-bootstrap"
+THEME = "./pelican-themes-master/simple-bootstrap"
