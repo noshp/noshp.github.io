@@ -1,6 +1,8 @@
 # noshp.github.io
+
 This is a Pelican blog made from jupyter notebooks, html, and md files.
 It was made mostly using this reference: https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/
+
 ---
 ## Getting Started
 **Clone the Repo**
