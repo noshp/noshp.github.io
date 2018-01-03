@@ -10,6 +10,7 @@ git clone https://github.com/noshp/noshp.github.io.git
 cd into the project folder
 Have `virtualenv` installed on your machine (http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 Activate your virtualenv
+
 *On Mac/Linux:*
 ```
 virtualenv venv -p <path_to_your_python_interpreter>
