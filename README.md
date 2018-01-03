@@ -1,7 +1,7 @@
 # noshp.github.io
 This is a Pelican blog made from jupyter notebooks, html, and md files.
 It was made mostly using this reference: https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/
-
+---
 ## Getting Started
 **Clone the Repo**
 ```
@@ -13,19 +13,33 @@ Activate your virtualenv
 
 *On Mac/Linux:*
 ```
+virtualenv venv -p <path_to_your_python_interpreter>
 source venv/bin/activate
 ```
 
 *On Windows:*
 ```
+virtualenv venv -p <path_to_your_python_interpreter>
 venv\Scripts\activate.bat
+```
+You can put `python3` instead of <path_to_your_python_interpreter> if you've set path variables already
+
+**Install requirements**
+```
+pip install -r requirements.txt
 ```
 ---
 ## Local Testing
 Use the `dev` branch for local testing.
 
+```
+git checkout dev
+```
+
 **Create Content**
+
 *Articles* are chronological content (like a blog posts) created by adding HTML, Jupyter Notebook, or Markdown files to the /content folder
+
 *Pages* are content that doesn't change often (like an "About" or "Contact" sections)
 
 All of these require metadata, as follows:
@@ -63,8 +77,9 @@ This is the content of my super blog post.
 ```
 
 3. Jupyter Notebook
-Copy the notebook into the /content folder
-Additionally, add a `.ipynb-meta` file with the same name. It should be structured like this:
+
+   Copy the notebook into the /content folder
+   Additionally, add a `.ipynb-meta` file with the same name. It should be structured like this:
 ```
 Title: First Post
 Slug: first-post
@@ -77,6 +92,7 @@ Summary: My first post, read it to find out.
 
 ---
 **See Content**
+
 Once content is added to the /content folder, we can generate the HTML by:
 ```
 cd <your_project_directory>
@@ -92,10 +108,13 @@ You should be able to preview the blog on your browser, at localhost:8000
 
 ---
 **Push Changes to GH Pages**
-Changes to the workign environment are stored on the `dev` branch
+
+Changes to the working environment are stored on the `dev` branch
+
 Changes to the blog's HTML are stored on the `master` branch
 
 To update the `master` branch:
+
 Ensure that ghp-import is installed
 ```
 pip install ghp-import
