@@ -1,0 +1,1 @@
+@"c:\users\mackenzie.nichols\documents\misc\mkn\test-jupyter-blog\venv\scripts\python.exe" "c:\users\mackenzie.nichols\documents\misc\mkn\test-jupyter-blog\venv\Scripts\markdown_py" %*
